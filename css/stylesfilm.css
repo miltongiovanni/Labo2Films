@@ -1,0 +1,284 @@
+body {
+    background-image: url(../images/wmcfilmsBlack.png) !important;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+section {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+header,
+#navbar,
+#tableLocation1,
+#tableLocation2,
+section,
+footer {
+    background-color: #000 !important;
+}
+
+#imglogo {
+    height: 50px;
+}
+
+#btnGenres{
+    text-decoration: none;
+}
+
+#dropdownNav:active{
+    background-color: none !important;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, .9) !important;
+
+}
+
+.form-control:focus {
+    border-color: #ffc107 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(240, 173, 78, 0.6) !important;
+}
+
+/* .btnAjouter, */
+#btnPanier, #btnConfiguration, #btnDesconnexion, #alertNav1, #alertNav2, #alertNav3, #alertNav4, #alertNav5{
+    display: none;
+}
+.btnAjouter{
+    display: none;
+}
+
+/* ----------- */
+/* Liste Films */
+/* ----------- */
+
+#alerte, #alerteConnex {
+    display: none;
+}
+
+.custom-file-label {
+    right: 15px;
+    left: 15px;
+    /* color: #e2e2e2; */
+    /* background-color: #737373; */
+    border: 1px solid #ced4da;
+}
+
+.custom-file-input:focus~.custom-file-label {
+    border-color: #bcbcbc;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-file-input:focus~.custom-file-label::after {
+    border-color: #bcbcbc;
+}
+
+.custom-file-input:disabled~.custom-file-label {
+    background-color: #e9ecef;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    color: white;
+}
+
+#tableFilms {
+    font-size: 0.9rem;
+}
+
+.close {
+    color: #ffc107;
+    text-shadow: 0 1px 0 #ffc107;
+    opacity: 1;
+}
+
+
+label {
+    color: #e2e2e2;
+}
+
+.close:not(:disabled):not(.disabled):hover,
+.close:not(:disabled):not(.disabled):focus {
+    color: #e2e2e2;
+    text-decoration: none;
+    opacity: .75;
+}
+
+/* ------------- */
+/* Galerie Films */
+/* ------------- */
+section img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-gallery {
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-gallery img.thumb {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.feature-gallery:hover img.thumb {
+    opacity: 1;
+    transition: all 0.35s;
+    -moz-transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    -ms-transform: scale(1.13);
+    transform: scale(1.13);
+}
+
+.fg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all.3s;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.feature-gallery:hover .fg-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.fg-overlay h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    opacity: 0;
+    margin-bottom: 5px;
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    transition: all .35s;
+}
+
+.fg-overlay p {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0;
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: all .35s;
+}
+
+.feature-gallery:hover .fg-overlay h2,
+.feature-gallery:hover .fg-overlay p {
+    opacity: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.fg-overlay:before {
+    opacity: 0;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+    content: "";
+    display: block;
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: all .35s;
+}
+
+.feature-gallery:hover .fg-overlay:before {
+    opacity: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Lister des films sans border */
+
+.img-thumbnail {
+    padding: 0;
+    border: 0;
+}
+
+/* ---------- */
+/* Pagination */
+/* ---------- */
+
+.pagination > li > a
+{
+    background-color: black;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: black;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.pagination > .active > a
+{
+    color: black;
+    background-color: #ffc107;
+    border: solid 1px #ffc107;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: black;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.page-item.disabled .page-link{
+    background-color: black;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.page-item.active .page-link {
+    background-color: #ffc107;
+    color: black;
+    border-color: #ffc107;
+}
